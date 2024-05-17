@@ -1,0 +1,50 @@
+
+
+
+
+.container{
+   max-width: 450px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 auto;
+    background-image: url(assets/ionela-mat-0K5c8b8oSLs-unsplash\ \(2\).jpg);
+    border-image: fill 0 linear-gradient(rgba(67, 66, 66, 0.067),#3a3434);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#addtaskbtn{
+    padding: 8px 16px;
+    background-color: #0cdef1;
+    border: 2px solid #13AEBB;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#taskinput:focus,#taskinput:hover{
+      border-color: #0cdef1;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.deletebtn{
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+}
