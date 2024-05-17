@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dice Game</title>
+
+    <style>
+      .container {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+      }
+
+      .dice {
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      body {
+        background-color: #042f4b;
+        margin: 0;
+      }
+
+      h1 {
+        margin: 30px;
+        font-family: "Lobster", cursive;
+        text-shadow: 5px 0 #232931;
+        font-size: 4.5rem;
+        color: #4ecca3;
+        text-align: center;
+      }
+
+      p {
+        font-size: 2rem;
+        color: #4ecca3;
+        font-family: "Indie Flower", cursive;
+      }
+
+      img {
+        width: 50%;
+      }
+
+      .bottom {
+        padding-top: 30px;
+      }
+
+      .butn {
+        background: #4ecca3;
+        font-family: "Indie Flower", cursive;
+        border-radius: 7px;
+        color: #ffff;
+        font-size: 30px;
+        padding: 16px 25px 16px 25px;
+        text-decoration: none;
+      }
+
+      .butn:hover {
+        background: #232931;
+        text-decoration: none;
+      }
+      .win{
+          height: 100px;
+		  width: 100px;
+	  }
+
+	  .invisible{
+           display: none;
+	   }
+
+	   @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .blink {
+        animation: blink 1s infinite;
+    }
+    
+	.green{
+		background-color: green;
+		border: 2px solid lightgreen;
+	}
+
+	.red{
+		background-color: red;
+		border: 2px solid lightcoral;
+	}
+     
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+		<div class="invisible blink">
+           <h1 id="result">The winner is</h1> <img src="confetti.png" class="win" alt="">
+		</div>
+
+      <h1 class="playerwin">Let's Play</h1>
+
+      <div class="dice">
+        <p class="Player1">Player 1</p>
+        <img class="img1" src="dice6.png" />
+        <h1 class="score1">0</h1>
+      </div>
+
+      <div class="dice">
+        <p class="Player2 ">Player 2</p>
+        <img class="img2" src="dice6.png" />
+        <h1 class="score2">0</h1>
+      </div>
+    </div>
+
+    <div class="container bottom">
+      <button type="button" class="butn" onClick="rollTheDice()">
+        Roll the Dice
+      </button>
+    </div>
+    <div class="container bottom">
+      <button type="button" class="butn" onClick="editNames()">
+        Edit Names
+      </button>
+    </div>
+    <div class="container bottom">
+      <button type="button" class="butn" onClick="resetGame()">
+        Reset Game
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
